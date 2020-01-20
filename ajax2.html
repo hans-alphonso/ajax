@@ -26,11 +26,6 @@
     function loadUser(){
       var xhr = new XMLHttpRequest();
 
-      xhr.UseCors(builder => builder
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader());
-
       xhr.open('GET', 'user.json', true);
 
       xhr.onload = function(){
